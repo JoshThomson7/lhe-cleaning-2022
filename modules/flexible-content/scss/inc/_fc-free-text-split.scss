@@ -1,0 +1,31 @@
+/*
+----------------------------------------------------
+    ______                  ______          __
+   / ____/_______  ___     /_  __/__  _  __/ /_
+  / /_  / ___/ _ \/ _ \     / / / _ \| |/_/ __/
+ / __/ / /  /  __/  __/    / / /  __/>  </ /_
+/_/   /_/   \___/\___/    /_/  \___/_/|_|\__/
+
+----------------------------------------------------
+Free Text
+*/
+
+.fc_free_text_split {
+    @import '_fc-general-text';
+
+    .max__width {
+        padding: 0 20px;
+
+        .split-container{
+            display: flex;
+            @include breakpoint(mamabear){flex-direction: column;}
+
+            .right-col, .left-col{
+                padding: 0 15px;
+
+                @include breakpoint(mamabear){width: 100%!important;}
+
+            } 
+        }
+    }
+}

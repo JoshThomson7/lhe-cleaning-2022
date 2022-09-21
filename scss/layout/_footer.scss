@@ -1,0 +1,100 @@
+/*
+ * Footer
+ *
+*/
+
+footer { position: relative; background: #fff; background-repeat: no-repeat; background-position: bottom center; background-size: 100%; border-top: 1px $border solid;
+
+    .footer__singup { margin: -100px auto 40px; background: $primary; padding: 60px 50px; display: flex; justify-content: space-between; align-items: center; border-radius: 5px; box-shadow: 0 5px 15px rgba(black, 0.4); flex-wrap: wrap; 
+        @include breakpoint(mamabear) { flex-direction: column; max-width: 90%; padding: 40px 20px;}
+        &--text { max-width: 400px; flex: 1;
+            h5 { font-size: 17px; font-weight: 700; margin-bottom: 10px; color: $secondary; text-transform: uppercase; line-height: normal; letter-spacing: 1px;}
+            h2 { font-size: 39px; text-transform: none; color: #fff; position: relative; margin: 0; font-weight: 900; line-height: 49px;
+                @include breakpoint(mamabear) { font-size: 25px; line-height: normal;}
+            }
+        }
+    }
+
+    .footer__menus { padding: 40px 0;
+
+        @include breakpoint(papabear) { padding: 0; }
+
+        .max__width { display: flex;
+            @include breakpoint(papabear) { flex-direction: column; }
+        }
+
+        article { width: 25%;
+
+            &.align-right { text-align: right;}
+
+            @include breakpoint(papabear) { width: 100%; border-bottom: 1px $border solid; }
+
+            h5 { font-size: 14px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: $text; padding-bottom: 20px; display: flex; align-items: center; justify-content: space-between;
+                @include breakpoint(papabear) { padding: 17px 0; cursor: pointer; }
+
+                i { display: none; font-size: 14px; color: $primary;
+                    @include breakpoint(papabear) { display: block; }
+                }
+
+            }
+
+            p { color: $text; font-size: 15px; margin-bottom: 13px;
+                a { color: $text;
+                    &:hover { 
+                        color: $primary;
+                    }
+                }
+            }
+
+            ul { margin: 0; padding: 0;
+                @include breakpoint(papabear) { font-size: 16px; padding-bottom: 20px; }
+
+                li { list-style: none; padding-bottom: 13px; color: $text; display: flex;
+                    @include breakpoint(papabear) { padding-bottom: 10px; }
+
+                    i { font-size: 16px; color: $primary; width: 22px; display: flex; justify-content: center; margin: 0 10px 0 0; }
+                    img { width: 140px; margin-right: 10px; }
+
+                    a { font-size: 14px; color: $textLight;
+                        @include breakpoint(papabear) { font-size: 15px; }
+                        &:hover { color: $primary; opacity: 1; }
+                    }
+                }
+            }
+
+            &.newsletter { width: 50%;
+            
+                @include breakpoint(papabear) { width: 100%; margin-top: 40px; border-bottom: none;}
+
+            }
+        }
+    }
+
+    .subfooter { padding: 0 0 40px 0;
+        @include breakpoint(papabear) { padding: 10px 0;}
+
+        .max__width { display: flex; justify-content: space-between; align-items: center;
+
+            @include breakpoint(papabear) { flex-direction: column;}
+
+            .subfooter--left { 
+                @include breakpoint(papabear) { margin-bottom: 20px; text-align: center;}
+
+                figure { max-width: 260px; width: 100%; margin-bottom: 10px;}
+                small { font-size: 12px; color: $text;
+                    a { color: $text;
+                        &:hover { color: $primary;}
+                    }
+                }
+            }
+
+            .subfooter--right { display: flex; justify-content: flex-end; align-content: center; padding-right: 50px;
+                figure { max-width: 260px; margin-left: 20px;
+                    &.feefo { max-width: 100px;}
+                }
+            }
+
+        }
+    }
+
+}

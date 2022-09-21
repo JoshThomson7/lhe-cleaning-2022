@@ -1,0 +1,20 @@
+// Fonts
+$primaryFont: 'Manrope', sans-serif;;
+$secondaryFont: 'Manrope', sans-serif;;
+$baseFontSize: 16px;
+$baseFontColor: #020718;
+
+// Colours
+$primary: #3698DA;
+$secondary: #045f9b;
+$tertiary: #030920;
+$quaternary: #FCCC7F;
+$green: #64c82d;
+$lightgrey: #e4eaf1;
+$text: $baseFontColor;
+$textLight: #545b73;
+$border: darken($lightgrey, 3%);
+$borderDark: lighten($text, 35%);
+$success: #64c82d;
+$warning: #ffc458;
+$error: tomato;
